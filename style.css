@@ -17,3 +17,7 @@ p {
     color:darkslateblue;
     font-size: 160%;
 }
+
+.flex {
+    display: flex;
+}
