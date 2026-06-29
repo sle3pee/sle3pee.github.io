@@ -11,13 +11,37 @@ h1 {
 }
 
 p {
-    border: 2px solid darkslateblue;
-    padding: 30px;
+    /*border: 2px solid darkslateblue;
+    padding: 30px;  
     margin: 50px;
     color:darkslateblue;
-    font-size: 160%;
+    font-size: 160%;*/
 }
 
-.flex {
-    display: flex;
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: aliceblue;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: darkslateblue;
+    display: block;
+}
+
+.sidenav a:hover {
+    color:darkgoldenrod;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
